@@ -2,7 +2,8 @@ var colorPicker;
 var colorTempSlider = document.getElementById('color-temperature-slider');
 var rgbArray = [0, 0, 0]; // 初始化RGB陣列
 
-const client = mqtt.connect('wss://public:public@public.cloud.shiftr.io', {
+// const client = mqtt.connect('wss://public:public@public.cloud.shiftr.io', {
+const client = mqtt.connect('ws://broker.emqx.io:8083/mqtt', {
     clientId: 'javascript',
     keepalive: 60 // 以秒为单位的时间间隔
 });
