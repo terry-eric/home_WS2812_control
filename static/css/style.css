@@ -102,3 +102,20 @@ body {
     background: #4CAF50;
     cursor: pointer;
 }
+#video {
+    width: 100%; /* 或具體的像素值，例如 300px */
+    height: 300px; /* 框框的高度 */
+    object-fit: cover; /* 確保視頻內容填滿框框，可能會裁剪部分內容 */
+    border: 2px solid #000; /* 可選：加一個邊框 */
+    border-radius: 10px; /* 可選：圓角邊框 */
+    display: block;
+    margin: 0 auto;
+}
+
+/* 父容器樣式，提供額外空間 */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* 在視頻上方留空間 */
+}
